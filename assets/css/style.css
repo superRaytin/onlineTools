@@ -54,7 +54,13 @@ h6 {
   font-size: 30px;
   margin-right: 10px;
 }
+.main .main-container .content .category:nth-child(odd) {
+  margin-right: 4%;
+}
 .main .main-container .content .category {
+  float: left;
+  width: 48%;
+  overflow: auto;
   margin-bottom: 20px;
 }
 .main .main-container .content .category .name {
