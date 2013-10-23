@@ -48,7 +48,9 @@ h6 {
   letter-spacing: 1px;
 }
 .main .main-container .title i {
-  color: #E08E4E;
+  /*color: #E08E4E;*/
+
+  color: #A3B94C;
   font-size: 30px;
   margin-right: 10px;
 }
@@ -60,7 +62,9 @@ h6 {
   margin-bottom: 5px;
   border-bottom: 1px solid #ddd;
   padding-left: 1em;
-  border-left: 5px solid #FF9800;
+  /*border-left: 5px solid #FF9800;*/
+
+  border-left: 5px solid #A3B94C;
   background: #f0f0f0;
 }
 .main .main-container .content .category .name span {
@@ -75,7 +79,7 @@ h6 {
 }
 .main .main-container .content .category .name .describe {
   display: inline-block;
-  margin-left: 1em;
+  margin-left: 0.5em;
   font-style: normal;
   font-size: 12px;
   color: #999;
