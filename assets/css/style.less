@@ -1,9 +1,16 @@
-*{margin:0;padding:0;}
+.transition1(@time: .2s, @type: ease-in){
+  -webkit-transition:all @time @type;
+  -moz-transition:all @time @type;
+  -o-transition:all @time @type;
+  -ms-transition:all @time @type;
+  transition:all @time @type;
+}
 html{
   height: 100%;
 }
 body{
   height: 100%;
+  min-width: 400px;
   color: #000;
 }
 h1,h2,h3,h4,h5,h6{
@@ -52,6 +59,7 @@ h1,h2,h3,h4,h5,h6{
         width: 48%;
         overflow: auto;
         margin-bottom: 20px;
+        .transition1;
         .name{
           font-size: 18px;
           margin-bottom: 5px;
@@ -101,18 +109,25 @@ h1,h2,h3,h4,h5,h6{
     }
   }
 }
+@media screen and (max-width: 1040px) {
+  .category:nth-child(odd){
+    margin-right: 0px !important;
+  }
+  .category{
+    width: 100% !important;
+  }
+}
+
 .sidebar{
   position: fixed;
   right: 0;
+  z-index: 1;
   width: 20%;
   min-height: 100%;
+  min-width: 200px;
   opacity:1;
   background: #3D4349;
-  -webkit-transition:all .2s ease-in;
-  -moz-transition:all .2s ease-in;
-  -o-transition:all .2s ease-in;
-  -ms-transition:all .2s ease-in;
-  transition:all .2s ease-in;
+  .transition1;
   .sidebar-container{
     color: #fff;
     padding: 25% 10% 0 10%;
@@ -136,6 +151,19 @@ h1,h2,h3,h4,h5,h6{
 }
 .sidebar:hover{
   opacity: 1;
+}
+
+@media screen and (max-width: 700px) {
+  .main{
+    width: 100%;
+  }
+  .sidebar{
+    position: relative;
+    width: 100%;
+    .sidebar-container{
+      padding: 40px;
+    }
+  }
 }
 
 .glyphicon{
