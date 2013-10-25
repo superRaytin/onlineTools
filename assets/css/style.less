@@ -88,12 +88,15 @@ h1,h2,h3,h4,h5,h6{
           }
         }
         .part{
+          padding-top: 10px;
           > ul{
-            padding-top: 5px;
+            li{
+              line-height: 2em;
+            }
             > li{
               position: relative;
-              float: left;
-              margin-right: 20px;
+              display: inline-block;
+              margin-right: 10px;
               margin-bottom: 10px;
               border: 1px solid #f8f8f8;
               a:link{
@@ -107,38 +110,46 @@ h1,h2,h3,h4,h5,h6{
               i{
                 visibility: visible;
               }
+              .sub_category_name{
+                min-width: 90px;
+                float: left;
+                text-align: center;
+                background: #EECC9E;
+                color: #111;
+                padding: 0px 8px;
+              }
+              .sub_category_name:after{
+              }
               > ul{
-                position: absolute;
-                top: 24px;
-                left: -1px;
-                right: -1px;
-                background: #DBEBC3;
-                z-index: 1;
-                border: 1px solid #DDD;
-                border-radius: 0 0 3px 3px;
+                padding-left: 120px;
                 li{
-                  padding: 0px 8px;
+                  display: inline-block;
+                  margin-right: 10px;
                 }
               }
             }
             > li:hover{
               i{
                 visibility: visible;
+                color: #666;
               }
             }
             > li.down{
               padding-left: 8px;
               border: 1px solid #DDD;
               border-radius: 3px;
-              .glyphicon{
+              i{
                 border-left: 1px solid #DDD;
                 display: inline-block;
                 vertical-align: top;
                 padding: 0px 8px 0 8px;
                 margin-left: 10px;
-                color: #A3B94C;
+                font-family: arial;
+                font-weight: bold;
+                font-style: normal;
+                cursor: pointer;
               }
-              .glyphicon:hover{
+              i:hover{
                 background: #f0f0f0;
               }
             }
@@ -210,4 +221,8 @@ h1,h2,h3,h4,h5,h6{
   margin-left: 5px;
   color: #999;
   cursor: pointer;
+}
+
+.tip{
+  color: #5c9acf;
 }

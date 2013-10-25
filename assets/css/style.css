@@ -94,13 +94,16 @@ h6 {
   font-size: 12px;
   color: #999;
 }
-.main .main-container .content .category .part > ul {
-  padding-top: 5px;
+.main .main-container .content .category .part {
+  padding-top: 10px;
+}
+.main .main-container .content .category .part > ul li {
+  line-height: 2em;
 }
 .main .main-container .content .category .part > ul > li {
   position: relative;
-  float: left;
-  margin-right: 20px;
+  display: inline-block;
+  margin-right: 10px;
   margin-bottom: 10px;
   border: 1px solid #f8f8f8;
 }
@@ -115,36 +118,42 @@ h6 {
 .main .main-container .content .category .part > ul > li i {
   visibility: visible;
 }
+.main .main-container .content .category .part > ul > li .sub_category_name {
+  min-width: 90px;
+  float: left;
+  text-align: center;
+  background: #EECC9E;
+  color: #111;
+  padding: 0px 8px;
+}
 .main .main-container .content .category .part > ul > li > ul {
-  position: absolute;
-  top: 24px;
-  left: -1px;
-  right: -1px;
-  background: #DBEBC3;
-  z-index: 1;
-  border: 1px solid #DDD;
-  border-radius: 0 0 3px 3px;
+  padding-left: 120px;
 }
 .main .main-container .content .category .part > ul > li > ul li {
-  padding: 0px 8px;
+  display: inline-block;
+  margin-right: 10px;
 }
 .main .main-container .content .category .part > ul > li:hover i {
   visibility: visible;
+  color: #666;
 }
 .main .main-container .content .category .part > ul > li.down {
   padding-left: 8px;
   border: 1px solid #DDD;
   border-radius: 3px;
 }
-.main .main-container .content .category .part > ul > li.down .glyphicon {
+.main .main-container .content .category .part > ul > li.down i {
   border-left: 1px solid #DDD;
   display: inline-block;
   vertical-align: top;
   padding: 0px 8px 0 8px;
   margin-left: 10px;
-  color: #A3B94C;
+  font-family: arial;
+  font-weight: bold;
+  font-style: normal;
+  cursor: pointer;
 }
-.main .main-container .content .category .part > ul > li.down .glyphicon:hover {
+.main .main-container .content .category .part > ul > li.down i:hover {
   background: #f0f0f0;
 }
 @media screen and (max-width: 1040px) {
@@ -210,4 +219,7 @@ h6 {
   margin-left: 5px;
   color: #999;
   cursor: pointer;
+}
+.tip {
+  color: #5c9acf;
 }
