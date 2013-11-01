@@ -122,9 +122,12 @@ h6 {
   min-width: 90px;
   float: left;
   text-align: center;
-  background: #EECC9E;
-  color: #111;
+  /*background: #EECC9E;*/
+
+  background: #99A;
+  color: #fff;
   padding: 0px 8px;
+  border-radius: 2px;
 }
 .main .main-container .content .category .part > ul > li > ul {
   padding-left: 120px;
