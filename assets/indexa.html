@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>妈妈再也不用担心我找不到在线好工具啦beta2.0</title>
+    <title>程序猿之妈妈再也不用担心我找不到在线好工具啦beta2.0</title>
     <meta charset="utf-8">
     <link href="css/typo.css" rel="stylesheet">
     <link href="css/bootstrap-glyphicons.css" rel="stylesheet">
@@ -91,27 +91,27 @@
     <div class="part">
         <ul class="clearfix">
             <% if(items){ %>
-            <% _.each(items, function(item){ %>
-            <li>
-                <a href="<%= item.url %>" target="_blank"><%= item.text %></a>
-                <% if(item.sign){ %><i class="glyphicon glyphicon-exclamation-sign" title="查看描述信息"></i><% } %>
-            </li>
-            <% }) %>
+                <% _.each(items, function(item){ %>
+                <li>
+                    <a href="<%= item.url %>" target="_blank"><%= item.text %></a>
+                    <% if(item.sign){ %><i class="glyphicon glyphicon-exclamation-sign" title="查看描述信息"></i><% } %>
+                </li>
+                <% }) %>
             <% } %>
             <% if(subCategory){ %>
-            <% _.each(subCategory, function(subItem){ %>
-            <li>
-                <span class="sub_category_name"><%= subItem.name %></span>
-                <ul>
-                    <% _.each(subItem.items, function(item){ %>
-                    <li>
-                        <a href="<%= item.url %>" target="_blank"><%= item.text %></a>
-                        <% if(item.sign){ %><i class="glyphicon glyphicon-exclamation-sign" title="查看描述信息"></i><% } %>
-                    </li>
-                    <% }) %>
-                </ul>
-            </li>
-            <% }) %>
+                <% _.each(subCategory, function(subItem){ %>
+                <li>
+                    <span class="sub_category_name"><%= subItem.name %></span>
+                    <ul>
+                        <% _.each(subItem.items, function(item){ %>
+                        <li>
+                            <a href="<%= item.url %>" target="_blank"><%= item.text %></a>
+                            <% if(item.sign){ %><i class="glyphicon glyphicon-exclamation-sign" title="查看描述信息"></i><% } %>
+                        </li>
+                        <% }) %>
+                    </ul>
+                </li>
+                <% }) %>
             <% } %>
         </ul>
     </div>

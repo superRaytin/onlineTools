@@ -54,10 +54,7 @@ h6 {
   font-size: 30px;
   margin-right: 10px;
 }
-.main .main-container .content .category:nth-child(odd) {
-  margin-right: 4%;
-}
-.main .main-container .content .category {
+.main .main-container .content .group {
   float: left;
   width: 48%;
   margin-bottom: 20px;
@@ -67,7 +64,7 @@ h6 {
   -ms-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
 }
-.main .main-container .content .category .name {
+.main .main-container .content .group .category .name {
   font-size: 18px;
   margin-bottom: 5px;
   border-bottom: 1px solid #ddd;
@@ -77,75 +74,72 @@ h6 {
   border-left: 5px solid #A3B94C;
   background: #f0f0f0;
 }
-.main .main-container .content .category .name span {
+.main .main-container .content .group .category .name span {
   display: inline-block;
   /*border-bottom: 2px solid #4D4D4D;*/
 
 }
-.main .main-container .content .category .name span .separate {
+.main .main-container .content .group .category .name span .separate {
   font-style: normal;
   color: #888;
   margin: 0 10px;
 }
-.main .main-container .content .category .name .describe {
+.main .main-container .content .group .category .name .describe {
   display: inline-block;
   margin-left: 0.5em;
   font-style: normal;
   font-size: 12px;
   color: #999;
 }
-.main .main-container .content .category .part {
+.main .main-container .content .group .category .part {
   padding-top: 10px;
 }
-.main .main-container .content .category .part > ul li {
+.main .main-container .content .group .category .part > ul li {
   line-height: 2em;
 }
-.main .main-container .content .category .part > ul > li {
+.main .main-container .content .group .category .part > ul > li {
   position: relative;
   display: inline-block;
   margin-right: 10px;
   margin-bottom: 10px;
   border: 1px solid #f8f8f8;
 }
-.main .main-container .content .category .part > ul > li a:link {
+.main .main-container .content .group .category .part > ul > li a:link {
   display: inline-block;
   vertical-align: top;
   color: #000;
 }
-.main .main-container .content .category .part > ul > li a:visited {
+.main .main-container .content .group .category .part > ul > li a:visited {
   color: #333;
 }
-.main .main-container .content .category .part > ul > li i {
+.main .main-container .content .group .category .part > ul > li i {
   visibility: visible;
 }
-.main .main-container .content .category .part > ul > li .sub_category_name {
+.main .main-container .content .group .category .part > ul > li .sub_category_name {
   min-width: 90px;
   float: left;
   text-align: center;
-  /*background: #EECC9E;*/
-
-  background: #99A;
-  color: #fff;
+  background: #EECC9E;
+  color: #111;
   padding: 0px 8px;
-  border-radius: 2px;
 }
-.main .main-container .content .category .part > ul > li > ul {
+.main .main-container .content .group .category .part > ul > li > ul {
   padding-left: 120px;
 }
-.main .main-container .content .category .part > ul > li > ul li {
+.main .main-container .content .group .category .part > ul > li > ul li {
   display: inline-block;
   margin-right: 10px;
 }
-.main .main-container .content .category .part > ul > li:hover i {
+.main .main-container .content .group .category .part > ul > li:hover i {
   visibility: visible;
   color: #666;
 }
-.main .main-container .content .category .part > ul > li.down {
+.main .main-container .content .group .category .part > ul > li.down {
   padding-left: 8px;
   border: 1px solid #DDD;
   border-radius: 3px;
 }
-.main .main-container .content .category .part > ul > li.down i {
+.main .main-container .content .group .category .part > ul > li.down i {
   border-left: 1px solid #DDD;
   display: inline-block;
   vertical-align: top;
@@ -156,8 +150,11 @@ h6 {
   font-style: normal;
   cursor: pointer;
 }
-.main .main-container .content .category .part > ul > li.down i:hover {
+.main .main-container .content .group .category .part > ul > li.down i:hover {
   background: #f0f0f0;
+}
+.main .main-container .content .group:nth-child(odd) {
+  margin-right: 4%;
 }
 @media screen and (max-width: 1040px) {
   .category:nth-child(odd) {
